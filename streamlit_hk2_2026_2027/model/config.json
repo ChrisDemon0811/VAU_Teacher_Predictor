@@ -1,0 +1,16 @@
+{
+  "version": "10-HK2-2026-2027",
+  "weights": {
+    "day": 3.6,
+    "session": 2.8,
+    "joint": 3.3,
+    "building": 0.5,
+    "floor": 0.8,
+    "room": 0.3,
+    "period": 1.0
+  },
+  "course_bonus": 6.0,
+  "selected_include_online": false,
+  "ranking_note": "Similarity score, not a probability",
+  "backtest_used_validation": "HK3_2025_2026"
+}

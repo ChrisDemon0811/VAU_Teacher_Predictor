@@ -6,3 +6,12 @@ __pycache__/
 htmlcov/
 .idea/
 .vscode/
+
+# Gói nguồn Streamlit chỉ dùng để tích hợp cục bộ, không đưa lên GitHub.
+VAU_Streamlit_HK2_2026_2027_TraiMoi.zip
+
+# Không bao giờ commit cấu hình gcloud, dữ liệu mẫu hoặc secrets của app Streamlit.
+streamlit_hk2_2026_2027/config/
+streamlit_hk2_2026_2027/sample_data/
+streamlit_hk2_2026_2027/.streamlit/secrets.toml
+streamlit_hk2_2026_2027/.env*
