@@ -1,0 +1,49 @@
+{
+  "ket_luan": "Tòa K mới được sử dụng HK1 2026-2027, nên chưa có lịch sử phòng K trong kỳ Train.",
+  "so_ca_train_basic": 403,
+  "so_ca_train_K": 0,
+  "cac_toa_train": {
+    "G": 401,
+    "B": 2
+  },
+  "kiem_tra_phong_G_khong_doi": true,
+  "kiem_tra_diem_phong_K_khop_mo_hinh_goc": true,
+  "khong_cao_lich_su_K": true,
+  "khong_dung_test_de_train": true,
+  "khong_toi_uu_theo_test": true,
+  "khong_the_suy_ra_xac_suat": true,
+  "so_giang_vien_dong_diem_cao_nhat_K502": 8,
+  "chu_y": "Đây là cold-start theo tòa nhà; không thể cải thiện độ chính xác bằng dữ liệu K chưa tồn tại.",
+  "test_da_duoc_tham_khao_nhieu_lan": true,
+  "test_so_ca_K": 60,
+  "diagnostic_test": {
+    "basic": {
+      "K_time_only_diagnostic": {
+        "so_ca": 60,
+        "top1": 0.03333333333333333,
+        "top3": 0.13333333333333333,
+        "bao_phu_giang_vien": 0.7166666666666667
+      },
+      "other_buildings_original_diagnostic": {
+        "so_ca": 105,
+        "top1": 0.09523809523809523,
+        "top3": 0.20952380952380953,
+        "bao_phu_giang_vien": 0.9238095238095239
+      }
+    },
+    "advanced": {
+      "K_time_only_diagnostic": {
+        "so_ca": 60,
+        "top1": 0.05,
+        "top3": 0.13333333333333333,
+        "bao_phu_giang_vien": 0.7166666666666667
+      },
+      "other_buildings_original_diagnostic": {
+        "so_ca": 105,
+        "top1": 0.09523809523809523,
+        "top3": 0.2,
+        "bao_phu_giang_vien": 0.9238095238095239
+      }
+    }
+  }
+}

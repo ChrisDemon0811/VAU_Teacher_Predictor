@@ -1,0 +1,36 @@
+{
+  "ket_qua": [
+    {
+      "giang_vien": "Nguyễn Thị Ngọc Thanh",
+      "diem_xep_hang": 9.7,
+      "so_ca_lich_su_trung_thu_buoi": 5
+    },
+    {
+      "giang_vien": "Nguyễn Hữu Hiệp",
+      "diem_xep_hang": 9.7,
+      "so_ca_lich_su_trung_thu_buoi": 4
+    },
+    {
+      "giang_vien": "Huỳnh Thanh Sơn",
+      "diem_xep_hang": 9.7,
+      "so_ca_lich_su_trung_thu_buoi": 4
+    }
+  ],
+  "so_giang_vien_dong_diem_cao_nhat": 8,
+  "giang_vien_dong_diem_cao_nhat": [
+    {"giang_vien": "Nguyễn Thị Ngọc Thanh", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 5},
+    {"giang_vien": "Nguyễn Hữu Hiệp", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Huỳnh Thanh Sơn", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Nguyễn Thanh Hiếu", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Phan Chánh Minh", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Nguyễn Thái Sơn", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Ngô Minh Nhựt", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4},
+    {"giang_vien": "Nguyễn Duy Hiếu", "diem_xep_hang": 9.7, "so_ca_lich_su_trung_thu_buoi": 4}
+  ],
+  "model": "History_TimeOnly_ColdStart_basic",
+  "che_do": "chi_thoi_gian_toa_moi",
+  "toa_moi_chua_co_lich_su": true,
+  "du_doan_co_co_so_kiem_dinh": false,
+  "thong_bao": "Tòa K chưa có lịch sử trong Train; chỉ xếp hạng theo thứ, buổi. Có 8 giảng viên đồng điểm cao nhất; Top 3 chỉ là ba người xếp đầu theo quy tắc phụ.",
+  "canh_bao": "Tòa K chỉ mới sử dụng từ HK1 2026-2027. Không có cơ sở nhận diện thói quen phòng/tầng K từ các học kỳ cũ. Kết quả chỉ tham khảo; điểm xếp hạng không phải xác suất, không phải lịch phân công chính thức."
+}

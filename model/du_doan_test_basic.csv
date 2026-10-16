@@ -1,0 +1,166 @@
+﻿class_group,giang_vien_thuc_te,thu,buoi,phong,gv_da_hoc,top1_dung,top3_dung,top1,diem_xep_hang_1,top2,diem_xep_hang_2,top3,diem_xep_hang_3,khoang_cach_diem_top1_top2
+2026-2027_HK1_010100085701,Nguyễn Lương Anh Tuấn,5,Chiều,G504,True,False,True,Lê Mạnh Hùng,10.952,Nguyễn Lương Anh Tuấn,10.952,Nguyễn Thanh Hiếu,10.952,0.0
+2026-2027_HK1_010100085702,Nguyễn Lương Anh Tuấn,3,Chiều,G503,True,True,True,Nguyễn Lương Anh Tuấn,11.234,Nguyễn Duy Hiếu,10.952,Nguyễn Thị Ngọc Ẩn,10.952,0.28200000000000003
+2026-2027_HK1_010100085702,Nguyễn Lương Anh Tuấn,8,Chiều,G503,True,False,False,Lê Mạnh Hùng,4.4,Trần Hoàng Lộc,4.4,Hồ Ngọc Thanh,4.382,0.0
+2026-2027_HK1_010100086701,Trần Hoàng Lộc,5,Sáng,G501,True,False,False,Nguyễn Thị Ngọc Thanh,11.282,Nguyễn Thanh Hiếu,11.234,Nguyễn Thái Sơn,11.0,0.04800000000000004
+2026-2027_HK1_010100086702,Trần Hoàng Lộc,4,Chiều,G501,True,False,True,Hồ Văn Quí,11.234,Huỳnh Thanh Sơn,10.952,Trần Hoàng Lộc,10.952,0.28200000000000003
+2026-2027_HK1_010100086801,Vũ Quốc Hưng,2,Tối,G601,True,True,True,Vũ Quốc Hưng,10.2,Bùi Thị Lan Anh,10.172,Huỳnh Hữu Nhân,10.124,0.02800000000000047
+2026-2027_HK1_010100086802,Vũ Quốc Hưng,5,Tối,K301,True,False,False,Bùi Thị Lan Anh,9.334,Đặng Thục Hiền,9.334,Khương Thới Hoàn Duy,9.286,0.0
+2026-2027_HK1_010100086901,Hồ Văn Quí,2,Sáng,G201,True,False,False,Hồ Huỳnh Phong,10.952,Bùi Thị Lan Anh,10.586,Hồ Ngọc Thanh,10.2,0.36599999999999966
+2026-2027_HK1_010100086902,Hồ Văn Quí,4,Sáng,G201,True,False,False,Huỳnh Thanh Sơn,10.952,Nguyễn Hữu Hiệp,10.952,Lê Thanh Nguyệt,10.586,0.0
+2026-2027_HK1_010100086903,Hồ Văn Quí,2,Chiều,G201,True,False,False,Lê Mạnh Hùng,10.952,Nguyễn Lương Anh Tuấn,10.538,Hồ Ngọc Thanh,10.2,0.4139999999999997
+2026-2027_HK1_010100086904,Hồ Văn Quí,4,Chiều,G202,True,True,True,Hồ Văn Quí,10.952,Trần Hoàng Lộc,10.952,Trần Nguyên Bảo,10.952,0.0
+2026-2027_HK1_010100087201,Nguyễn Thanh Hiếu,6,Sáng,G201,True,False,False,Phan Chánh Minh,10.952,Bùi Thị Lan Anh,10.2,Huỳnh Hữu Nhân,10.2,0.7520000000000007
+2026-2027_HK1_010100087202,Nguyễn Thanh Hiếu,6,Chiều,G201,True,False,False,Lê Thanh Nguyệt,10.586,Huỳnh Hữu Nhân,10.2,Khương Thới Hoàn Duy,10.2,0.386000000000001
+2026-2027_HK1_010100096703,Huỳnh Thanh Sơn,5,Sáng,G202,True,False,False,Nguyễn Duy Hiếu,10.952,Ngô Minh Nhựt,10.952,Bùi Thị Lan Anh,10.436,0.0
+2026-2027_HK1_010100096704,Huỳnh Thanh Sơn,5,Chiều,G202,True,False,False,Nguyễn Hữu Hiệp,10.952,Trần Nguyên Bảo,10.952,Lê Mạnh Hùng,10.2,0.0
+2026-2027_HK1_010110007001,Lê Thanh Nguyệt,2,Chiều,K306,True,False,False,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007002,Lê Thanh Nguyệt,6,Chiều,K406,True,False,False,Huỳnh Hữu Nhân,9.7,Khương Thới Hoàn Duy,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007003,Lê Thanh Nguyệt,5,Chiều,K402,True,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010110007101,Huỳnh Hữu Nhân,6,Chiều,G408,True,False,False,Đặng Thục Hiền,11.3,Khương Thới Hoàn Duy,11.234,Trần Nguyên Bảo,10.952,0.06600000000000072
+2026-2027_HK1_010110007102,Võ Hoàng,4,Sáng,K402,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,0.0
+2026-2027_HK1_010110007103,Bùi Thị Lan Anh,4,Chiều,K101,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010110007104,Bùi Thị Lan Anh,5,Chiều,K202,True,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010110007105,Bùi Thị Lan Anh,5,Tối,K205,True,True,True,Bùi Thị Lan Anh,9.334,Đặng Thục Hiền,9.334,Khương Thới Hoàn Duy,9.286,0.0
+2026-2027_HK1_010110007107,Khương Thới Hoàn Duy,6,Chiều,K304,True,False,True,Huỳnh Hữu Nhân,9.7,Khương Thới Hoàn Duy,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007108,Phan Văn Trị,7,Chiều,G113,False,False,False,Hồ Huỳnh Phong,10.2,Phan Hoàng Nam,10.2,Nguyễn Hữu Hiệp,9.9,0.0
+2026-2027_HK1_010110007109,Huỳnh Hữu Nhân,6,Tối,K201,True,True,True,Huỳnh Hữu Nhân,9.7,Vũ Quốc Hưng,9.7,Chưa Phân Công,9.334,0.0
+2026-2027_HK1_010110007110,Bùi Thị Lan Anh,2,Chiều,K106,True,False,False,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007111,Trần Ngọc Hậu,7,Tối,G204,False,False,False,Phan Hoàng Nam,10.2,Khương Thới Hoàn Duy,9.468,Lê Thanh Nguyệt,9.27,0.7320000000000011
+2026-2027_HK1_010110007112,Đặng Thục Hiền,4,Sáng,G207,True,False,False,Nguyễn Hữu Hiệp,11.234,Huỳnh Thanh Sơn,10.952,Lê Thanh Nguyệt,10.868,0.28200000000000003
+2026-2027_HK1_010110007113,Đặng Thục Hiền,4,Chiều,K302,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010110007114,Phạm Thị Kim Thúy,5,Chiều,G203,False,False,False,Nguyễn Hữu Hiệp,11.234,Trần Nguyên Bảo,10.952,Lê Mạnh Hùng,10.2,0.28200000000000003
+2026-2027_HK1_010110007115,Đặng Thục Hiền,5,Tối,G303,True,True,True,Đặng Thục Hiền,9.882,Bùi Thị Lan Anh,9.834,Khương Thới Hoàn Duy,9.834,0.047999999999998266
+2026-2027_HK1_010110007116,Huỳnh Hữu Nhân,2,Sáng,G303,True,False,False,Phan Chánh Minh,10.586,Lê Thanh Nguyệt,10.556,Hồ Huỳnh Phong,10.2,0.030000000000001137
+2026-2027_HK1_010110007117,Võ Hoàng,5,Sáng,G204,True,False,False,Nguyễn Duy Hiếu,10.952,Ngô Minh Nhựt,10.952,Huỳnh Thanh Sơn,10.2,0.0
+2026-2027_HK1_010110007118,Bùi Thị Lan Anh,2,Tối,G204,True,False,True,Vũ Quốc Hưng,10.952,Khương Thới Hoàn Duy,9.834,Bùi Thị Lan Anh,9.564,1.1180000000000003
+2026-2027_HK1_010110007120,Huỳnh Hữu Nhân,2,Chiều,K301,True,False,False,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007121,Bùi Thị Lan Anh,4,Tối,G204,True,False,False,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.852,Lê Nguyễn Xuân Sinh,9.834,0.34800000000000075
+2026-2027_HK1_010110007123,Tô Thị Thanh Hà,5,Sáng,G304,False,False,False,Phan Chánh Minh,11.234,Nguyễn Thị Ngọc Thanh,10.904,Huỳnh Thanh Sơn,10.2,0.33000000000000007
+2026-2027_HK1_010110007127,Tô Thị Thanh Hà,4,Sáng,K404,False,False,False,Huỳnh Thanh Sơn,9.7,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,0.0
+2026-2027_HK1_010110007128,Huỳnh Hữu Nhân,4,Tối,K104,True,False,False,Vũ Quốc Hưng,9.7,Chưa Phân Công,9.334,Lê Nguyễn Xuân Sinh,9.334,0.36599999999999966
+2026-2027_HK1_010110007131,Huỳnh Hữu Nhân,4,Chiều,K406,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010110007132,Đặng Thục Hiền,2,Chiều,K202,True,False,False,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010110007134,Khương Thới Hoàn Duy,3,Tối,K101,True,False,True,Nguyễn Thị Ngọc Ẩn,9.7,Bùi Thị Lan Anh,9.334,Khương Thới Hoàn Duy,9.334,0.36599999999999966
+2026-2027_HK1_010110007134,Khương Thới Hoàn Duy,8,Tối,K101,True,False,False,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_010110007135,Vũ Thế Anh,7,Tối,G601,False,False,False,Phan Hoàng Nam,10.952,Khương Thới Hoàn Duy,10.22,Lê Thanh Nguyệt,9.204,0.7320000000000011
+2026-2027_HK1_010110007136,Khương Thới Hoàn Duy,7,Chiều,K102,True,False,False,Hồ Huỳnh Phong,9.7,Phan Hoàng Nam,9.7,Nguyễn Hữu Hiệp,9.334,0.0
+2026-2027_HK1_010110007137,Đặng Thục Hiền,2,Sáng,K205,True,False,False,Hồ Huỳnh Phong,9.7,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,0.0
+2026-2027_HK1_010110007140,Vũ Thế Anh,3,Sáng,K305,False,False,False,Huỳnh Thanh Sơn,9.7,Nguyễn Thị Ngọc Thanh,9.7,Ngô Minh Nhựt,9.7,0.0
+2026-2027_HK1_010110007140,Vũ Thế Anh,8,Sáng,K305,False,False,False,Bùi Thị Lan Anh,2.8,Huỳnh Hữu Nhân,2.8,Huỳnh Thanh Sơn,2.8,0.0
+2026-2027_HK1_010110007141,Phan Văn Trị,7,Sáng,K304,False,False,False,Hồ Huỳnh Phong,9.7,Nguyễn Hữu Hiệp,9.7,Huỳnh Hữu Nhân,9.334,0.0
+2026-2027_HK1_010110007142,Khương Thới Hoàn Duy,3,Sáng,G305,True,False,False,Phan Chánh Minh,11.234,Võ Hoàng,10.538,Huỳnh Thanh Sơn,10.2,0.6960000000000015
+2026-2027_HK1_010110007142,Khương Thới Hoàn Duy,8,Sáng,G305,True,False,False,Phan Chánh Minh,4.4,Hồ Huỳnh Phong,4.334,Nguyễn Thị Ngọc Thanh,4.268,0.06600000000000072
+2026-2027_HK1_010110007143,Huỳnh Hữu Nhân,3,Sáng,K306,True,False,False,Huỳnh Thanh Sơn,9.7,Nguyễn Thị Ngọc Thanh,9.7,Ngô Minh Nhựt,9.7,0.0
+2026-2027_HK1_010110007143,Huỳnh Hữu Nhân,8,Sáng,K306,True,False,True,Bùi Thị Lan Anh,2.8,Huỳnh Hữu Nhân,2.8,Huỳnh Thanh Sơn,2.8,0.0
+2026-2027_HK1_010110007144,Huỳnh Hữu Nhân,3,Tối,K201,True,False,False,Nguyễn Thị Ngọc Ẩn,9.7,Bùi Thị Lan Anh,9.334,Khương Thới Hoàn Duy,9.334,0.36599999999999966
+2026-2027_HK1_010110007144,Huỳnh Hữu Nhân,8,Tối,K201,True,False,True,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_010151100101,Ngô Minh Nhựt,5,Chiều,K305,True,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010151100101,Ngô Minh Nhựt,5,Chiều,K306,True,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010151100102,Nguyễn Thanh Hiếu,5,Chiều,K405,True,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010151100103,Nguyễn Thái Sơn,3,Chiều,G302,True,False,False,Nguyễn Lương Anh Tuấn,11.168,Nguyễn Duy Hiếu,10.952,Nguyễn Thị Ngọc Ẩn,10.2,0.2159999999999993
+2026-2027_HK1_010151100103,Nguyễn Thái Sơn,8,Chiều,G302,True,False,False,Đặng Thục Hiền,4.364,Khương Thới Hoàn Duy,4.334,Nguyễn Lương Anh Tuấn,4.334,0.03000000000000025
+2026-2027_HK1_010151100104,Nguyễn Thanh Hiếu,4,Sáng,G504,True,False,False,Huỳnh Thanh Sơn,11.234,Hồ Ngọc Thanh,11.0,Hồ Văn Quí,11.0,0.23399999999999999
+2026-2027_HK1_010151100105,Ngô Minh Nhựt,3,Sáng,G501,True,False,False,Nguyễn Thị Ngọc Thanh,11.234,Huỳnh Thanh Sơn,11.0,Lê Minh Hưng,10.634,0.23399999999999999
+2026-2027_HK1_010151100105,Ngô Minh Nhựt,8,Sáng,G501,True,False,False,Hồ Ngọc Thanh,4.4,Nguyễn Thanh Hiếu,4.4,Nguyễn Thị Ngọc Thanh,4.4,0.0
+2026-2027_HK1_010151100106,Ngô Minh Nhựt,5,Sáng,G608,True,False,True,Nguyễn Hữu Hiệp,10.952,Nguyễn Thanh Hiếu,10.952,Ngô Minh Nhựt,10.952,0.0
+2026-2027_HK1_010151100107,Ngô Minh Nhựt,2,Sáng,G602,True,False,False,Hồ Huỳnh Phong,10.2,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.0
+2026-2027_HK1_010151100108,Ngô Minh Nhựt,3,Chiều,G307,True,False,False,Nguyễn Duy Hiếu,10.952,Nguyễn Lương Anh Tuấn,10.904,Nguyễn Thị Ngọc Ẩn,10.2,0.04800000000000004
+2026-2027_HK1_010151100108,Ngô Minh Nhựt,8,Chiều,G307,True,False,False,Bùi Thị Lan Anh,4.382,Trần Nguyên Bảo,4.1,Đặng Thục Hiền,4.1,0.28199999999999914
+2026-2027_HK1_010151100109,Nguyễn Thanh Hiếu,5,Sáng,G201,True,False,False,Nguyễn Duy Hiếu,10.952,Ngô Minh Nhựt,10.952,Huỳnh Thanh Sơn,10.2,0.0
+2026-2027_HK1_010151100111,Tô Nguyễn Phước Vinh,4,Chiều,K402,False,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010151100112,Tô Nguyễn Phước Vinh,6,Chiều,K404,False,False,False,Huỳnh Hữu Nhân,9.7,Khương Thới Hoàn Duy,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_010151100113,Tô Nguyễn Phước Vinh,3,Chiều,K406,False,False,False,Nguyễn Duy Hiếu,9.7,Nguyễn Lương Anh Tuấn,9.7,Nguyễn Thị Ngọc Ẩn,9.7,0.0
+2026-2027_HK1_010151100113,Tô Nguyễn Phước Vinh,8,Chiều,K406,False,False,False,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_010151100114,Tô Nguyễn Phước Vinh,2,Chiều,G308,False,False,False,Bùi Thị Lan Anh,10.586,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.386000000000001
+2026-2027_HK1_010151100117,Tô Nguyễn Phước Vinh,5,Chiều,K101,False,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_010151100201,Nguyễn Thị Ngọc Ẩn,3,Tối,G203,True,True,True,Nguyễn Thị Ngọc Ẩn,10.2,Chưa Phân Công,10.076,Khương Thới Hoàn Duy,9.9,0.12399999999999878
+2026-2027_HK1_010151100201,Nguyễn Thị Ngọc Ẩn,8,Tối,G203,True,False,False,Khương Thới Hoàn Duy,4.334,Huỳnh Hữu Nhân,4.052,Vũ Quốc Hưng,4.052,0.28199999999999914
+2026-2027_HK1_010151100204,Nguyễn Hữu Hiệp,7,Sáng,G505,True,True,True,Nguyễn Hữu Hiệp,10.952,Hồ Huỳnh Phong,10.2,Huỳnh Hữu Nhân,9.852,0.7520000000000007
+2026-2027_HK1_010151100205,Nguyễn Thị Ngọc Ẩn,4,Chiều,K205,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010151100206,Nguyễn Thị Ngọc Ẩn,3,Chiều,G608,True,False,False,Khương Thới Hoàn Duy,10.538,Nguyễn Duy Hiếu,10.2,Nguyễn Lương Anh Tuấn,10.2,0.3379999999999992
+2026-2027_HK1_010151100206,Nguyễn Thị Ngọc Ẩn,8,Chiều,G608,True,False,False,Huỳnh Hữu Nhân,4.316,Nguyễn Hữu Hiệp,4.1,Huỳnh Thanh Sơn,4.052,0.2159999999999993
+2026-2027_HK1_010151100207,Hồ Huỳnh Phong,7,Sáng,G408,True,False,True,Bùi Thị Lan Anh,10.34,Hồ Huỳnh Phong,10.2,Nguyễn Hữu Hiệp,10.2,0.14000000000000057
+2026-2027_HK1_010151100208,Hồ Huỳnh Phong,2,Sáng,G308,True,False,True,Phan Chánh Minh,10.586,Lê Thanh Nguyệt,10.556,Hồ Huỳnh Phong,10.2,0.030000000000001137
+2026-2027_HK1_010151100209,Nguyễn Hữu Hiệp,7,Chiều,G602,True,False,False,Khương Thới Hoàn Duy,10.22,Hồ Huỳnh Phong,10.2,Phan Hoàng Nam,10.2,0.019999999999999574
+2026-2027_HK1_010151100501,Trần Nguyên Bảo,7,Sáng,G207,True,False,False,Hồ Huỳnh Phong,10.952,Huỳnh Hữu Nhân,10.538,Nguyễn Hữu Hiệp,10.2,0.4140000000000015
+2026-2027_HK1_010151100501,Trần Nguyên Bảo,7,Sáng,G207,True,False,False,Hồ Huỳnh Phong,10.952,Huỳnh Hữu Nhân,10.538,Nguyễn Hữu Hiệp,10.2,0.4140000000000015
+2026-2027_HK1_010151100502,Trần Nguyên Bảo,6,Tối,G203,True,False,False,Huỳnh Hữu Nhân,10.952,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.834,0.7520000000000007
+2026-2027_HK1_010151100502,Trần Nguyên Bảo,6,Tối,G203,True,False,False,Huỳnh Hữu Nhân,10.952,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.834,0.7520000000000007
+2026-2027_HK1_010151100503,Trần Nguyên Bảo,5,Tối,K302,True,False,False,Bùi Thị Lan Anh,9.334,Đặng Thục Hiền,9.334,Khương Thới Hoàn Duy,9.286,0.0
+2026-2027_HK1_010151100503,Trần Nguyên Bảo,5,Tối,K302,True,False,False,Bùi Thị Lan Anh,9.334,Đặng Thục Hiền,9.334,Khương Thới Hoàn Duy,9.286,0.0
+2026-2027_HK1_010151100504,Lê Thanh Nguyệt,3,Chiều,K204,True,False,False,Nguyễn Duy Hiếu,9.7,Nguyễn Lương Anh Tuấn,9.7,Nguyễn Thị Ngọc Ẩn,9.7,0.0
+2026-2027_HK1_010151100504,Lê Thanh Nguyệt,3,Chiều,K204,True,False,False,Nguyễn Duy Hiếu,9.7,Nguyễn Lương Anh Tuấn,9.7,Nguyễn Thị Ngọc Ẩn,9.7,0.0
+2026-2027_HK1_010151100504,Lê Thanh Nguyệt,8,Chiều,K204,True,False,False,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_010151100505,Nguyễn Thị Ngọc Thanh,5,Sáng,G407,True,False,False,Trần Hoàng Lộc,10.868,Đặng Thục Hiền,10.436,Huỳnh Thanh Sơn,10.2,0.4320000000000004
+2026-2027_HK1_010151100505,Nguyễn Thị Ngọc Thanh,5,Sáng,G407,True,False,False,Trần Hoàng Lộc,10.868,Đặng Thục Hiền,10.436,Huỳnh Thanh Sơn,10.2,0.4320000000000004
+2026-2027_HK1_010151100506,Nguyễn Thị Ngọc Thanh,3,Sáng,G407,True,False,True,Khương Thới Hoàn Duy,10.604,Huỳnh Thanh Sơn,10.2,Nguyễn Thị Ngọc Thanh,10.2,0.4039999999999999
+2026-2027_HK1_010151100506,Nguyễn Thị Ngọc Thanh,3,Sáng,G407,True,False,True,Khương Thới Hoàn Duy,10.604,Huỳnh Thanh Sơn,10.2,Nguyễn Thị Ngọc Thanh,10.2,0.4039999999999999
+2026-2027_HK1_010151100506,Nguyễn Thị Ngọc Thanh,8,Sáng,G407,True,False,False,Trần Hoàng Lộc,4.334,Đặng Thục Hiền,4.268,Bùi Thị Lan Anh,4.004,0.06599999999999984
+2026-2027_HK1_010151100507,Trần Nguyên Bảo,4,Tối,G408,True,False,False,Huỳnh Hữu Nhân,10.472,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.9,0.27200000000000024
+2026-2027_HK1_010151100507,Trần Nguyên Bảo,4,Tối,G408,True,False,False,Huỳnh Hữu Nhân,10.472,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.9,0.27200000000000024
+2026-2027_HK1_010151100508,Trần Nguyên Bảo,3,Tối,G505,True,False,False,Nguyễn Thị Ngọc Ẩn,10.952,Lê Nguyễn Xuân Sinh,10.586,Nguyễn Hữu Hiệp,10.022,0.36599999999999966
+2026-2027_HK1_010151100508,Trần Nguyên Bảo,3,Tối,G505,True,False,False,Nguyễn Thị Ngọc Ẩn,10.952,Lê Nguyễn Xuân Sinh,10.586,Nguyễn Hữu Hiệp,10.022,0.36599999999999966
+2026-2027_HK1_010151100508,Trần Nguyên Bảo,8,Tối,G505,True,False,False,Nguyễn Hữu Hiệp,4.196,Lê Nguyễn Xuân Sinh,4.1,Vũ Quốc Hưng,4.1,0.0959999999999992
+2026-2027_HK1_010151100509,Trần Nguyên Bảo,2,Tối,K402,True,False,False,Vũ Quốc Hưng,9.7,Khương Thới Hoàn Duy,9.334,Bùi Thị Lan Anh,8.968,0.36599999999999966
+2026-2027_HK1_010151100509,Trần Nguyên Bảo,2,Tối,K402,True,False,False,Vũ Quốc Hưng,9.7,Khương Thới Hoàn Duy,9.334,Bùi Thị Lan Anh,8.968,0.36599999999999966
+2026-2027_HK1_010151100801,Phan Chánh Minh,2,Sáng,G407,True,False,False,Hồ Huỳnh Phong,10.2,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.0
+2026-2027_HK1_010151100801,Phan Chánh Minh,2,Sáng,G407,True,False,False,Hồ Huỳnh Phong,10.2,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.0
+2026-2027_HK1_010151100802,Phan Chánh Minh,3,Sáng,G204,True,False,False,Nguyễn Thị Ngọc Thanh,11.234,Ngô Minh Nhựt,11.0,Lê Thanh Nguyệt,10.586,0.23399999999999999
+2026-2027_HK1_010151100802,Phan Chánh Minh,3,Sáng,G204,True,False,False,Nguyễn Thị Ngọc Thanh,11.234,Ngô Minh Nhựt,11.0,Lê Thanh Nguyệt,10.586,0.23399999999999999
+2026-2027_HK1_010151100802,Phan Chánh Minh,8,Sáng,G204,True,False,False,Nguyễn Thị Ngọc Thanh,4.334,Bùi Thị Lan Anh,4.1,Hồ Huỳnh Phong,4.1,0.2339999999999991
+2026-2027_HK1_010151100803,Phan Chánh Minh,5,Sáng,G203,True,False,False,Nguyễn Duy Hiếu,11.234,Ngô Minh Nhựt,11.234,Bùi Thị Lan Anh,10.208,0.0
+2026-2027_HK1_010151100803,Phan Chánh Minh,5,Sáng,G203,True,False,False,Nguyễn Duy Hiếu,11.234,Ngô Minh Nhựt,11.234,Bùi Thị Lan Anh,10.208,0.0
+2026-2027_HK1_010151100804,Phan Chánh Minh,6,Sáng,G207,True,True,True,Phan Chánh Minh,11.234,Bùi Thị Lan Anh,10.2,Huỳnh Hữu Nhân,10.2,1.0340000000000007
+2026-2027_HK1_010151100804,Phan Chánh Minh,6,Sáng,G207,True,True,True,Phan Chánh Minh,11.234,Bùi Thị Lan Anh,10.2,Huỳnh Hữu Nhân,10.2,1.0340000000000007
+2026-2027_HK1_010151100805,Phan Chánh Minh,7,Sáng,G601,True,False,False,Hồ Huỳnh Phong,10.2,Nguyễn Hữu Hiệp,10.2,Huỳnh Hữu Nhân,9.882,0.0
+2026-2027_HK1_010151100805,Phan Chánh Minh,7,Sáng,G601,True,False,False,Hồ Huỳnh Phong,10.2,Nguyễn Hữu Hiệp,10.2,Huỳnh Hữu Nhân,9.882,0.0
+2026-2027_HK1_010151100807,Nguyễn Hữu Hiệp,5,Sáng,G602,True,False,True,Ngô Minh Nhựt,11.234,Nguyễn Hữu Hiệp,10.952,Nguyễn Thanh Hiếu,10.952,0.28200000000000003
+2026-2027_HK1_010151100807,Nguyễn Hữu Hiệp,5,Sáng,G602,True,False,True,Ngô Minh Nhựt,11.234,Nguyễn Hữu Hiệp,10.952,Nguyễn Thanh Hiếu,10.952,0.28200000000000003
+2026-2027_HK1_010151100808,Nguyễn Hữu Hiệp,5,Chiều,G505,True,False,False,Nguyễn Lương Anh Tuấn,11.234,Nguyễn Thái Sơn,11.234,Lê Mạnh Hùng,10.952,0.0
+2026-2027_HK1_010151100808,Nguyễn Hữu Hiệp,5,Chiều,G505,True,False,False,Nguyễn Lương Anh Tuấn,11.234,Nguyễn Thái Sơn,11.234,Lê Mạnh Hùng,10.952,0.0
+2026-2027_HK1_010151100809,Nguyễn Hữu Hiệp,4,Chiều,K301,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010151100809,Nguyễn Hữu Hiệp,4,Chiều,K301,True,False,False,Huỳnh Thanh Sơn,9.7,Hồ Văn Quí,9.7,Trần Hoàng Lộc,9.7,0.0
+2026-2027_HK1_010151101003,Nguyễn Duy Hiếu,4,Sáng,G407,True,False,False,Huỳnh Thanh Sơn,10.2,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.0
+2026-2027_HK1_010151101004,Nguyễn Thái Sơn,6,Chiều,G204,True,False,False,Lê Thanh Nguyệt,10.868,Huỳnh Hữu Nhân,10.2,Khương Thới Hoàn Duy,10.2,0.668000000000001
+2026-2027_HK1_010151101005,Nguyễn Thái Sơn,6,Sáng,G505,True,True,True,Nguyễn Thái Sơn,11.0,Huỳnh Hữu Nhân,10.952,Khương Thới Hoàn Duy,10.952,0.04800000000000004
+2026-2027_HK1_010151101006,Nguyễn Duy Hiếu,5,Sáng,K101,True,False,True,Huỳnh Thanh Sơn,9.7,Nguyễn Duy Hiếu,9.7,Nguyễn Hữu Hiệp,9.7,0.0
+2026-2027_HK1_010151101007,Nguyễn Thái Sơn,5,Chiều,G503,True,False,False,Trần Anh Tuấn,11.234,Lê Mạnh Hùng,10.952,Nguyễn Lương Anh Tuấn,10.952,0.28200000000000003
+2026-2027_HK1_010151101009,Vũ Quốc Hưng,3,Tối,K301,True,False,False,Nguyễn Thị Ngọc Ẩn,9.7,Bùi Thị Lan Anh,9.334,Khương Thới Hoàn Duy,9.334,0.36599999999999966
+2026-2027_HK1_010151101009,Vũ Quốc Hưng,8,Tối,K301,True,False,False,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_010151101010,Nguyễn Thái Sơn,5,Sáng,K302,True,False,False,Huỳnh Thanh Sơn,9.7,Nguyễn Duy Hiếu,9.7,Nguyễn Hữu Hiệp,9.7,0.0
+2026-2027_HK1_010151101201,Hồ Ngọc Thanh,2,Chiều,G304,True,False,True,Bùi Thị Lan Anh,10.604,Hồ Ngọc Thanh,10.2,Hồ Văn Quí,10.2,0.4039999999999999
+2026-2027_HK1_010151101202,Hồ Ngọc Thanh,2,Sáng,G204,True,False,True,Hồ Huỳnh Phong,10.952,Bùi Thị Lan Anh,10.586,Hồ Ngọc Thanh,10.2,0.36599999999999966
+2026-2027_HK1_010151101203,Hồ Ngọc Thanh,3,Sáng,G207,True,False,False,Ngô Minh Nhựt,11.0,Nguyễn Thị Ngọc Thanh,10.952,Lê Thanh Nguyệt,10.604,0.04800000000000004
+2026-2027_HK1_010151101203,Hồ Ngọc Thanh,8,Sáng,G207,True,False,False,Lê Thanh Nguyệt,4.382,Nguyễn Hữu Hiệp,4.334,Phan Chánh Minh,4.334,0.04800000000000004
+2026-2027_HK1_010151101204,Hồ Ngọc Thanh,3,Chiều,G303,True,False,False,Nguyễn Duy Hiếu,10.952,Nguyễn Lương Anh Tuấn,10.904,Nguyễn Thị Ngọc Ẩn,10.2,0.04800000000000004
+2026-2027_HK1_010151101205,Hồ Ngọc Thanh,4,Sáng,G202,True,False,False,Huỳnh Thanh Sơn,10.952,Nguyễn Hữu Hiệp,10.952,Lê Thanh Nguyệt,10.586,0.0
+2026-2027_HK1_010151101206,Hồ Ngọc Thanh,4,Chiều,G301,True,False,False,Trần Nguyên Bảo,10.952,Đặng Thục Hiền,10.634,Bùi Thị Lan Anh,10.22,0.3179999999999996
+2026-2027_HK1_010151101401,Lê Mạnh Hùng,3,Chiều,G207,True,False,False,Nguyễn Thị Ngọc Ẩn,10.952,Trần Nguyên Bảo,10.952,Đặng Thục Hiền,10.586,0.0
+2026-2027_HK1_010151101401,Lê Mạnh Hùng,8,Chiều,G207,True,False,False,Nguyễn Thị Ngọc Ẩn,4.1,Trần Nguyên Bảo,4.1,Đặng Thục Hiền,4.1,0.0
+2026-2027_HK1_010151101402,Lê Mạnh Hùng,4,Chiều,G303,True,False,False,Trần Nguyên Bảo,10.952,Đặng Thục Hiền,10.634,Bùi Thị Lan Anh,10.22,0.3179999999999996
+2026-2027_HK1_010151101403,Lê Mạnh Hùng,3,Tối,G207,True,False,False,Nguyễn Thị Ngọc Ẩn,10.2,Chưa Phân Công,10.076,Khương Thới Hoàn Duy,9.882,0.12399999999999878
+2026-2027_HK1_010151101403,Lê Mạnh Hùng,8,Tối,G207,True,False,False,Huỳnh Hữu Nhân,4.334,Khương Thới Hoàn Duy,4.052,Vũ Quốc Hưng,4.052,0.28199999999999914
+2026-2027_HK1_010151101404,Lê Mạnh Hùng,4,Tối,G207,True,False,False,Vũ Quốc Hưng,10.2,Chưa Phân Công,9.834,Lê Nguyễn Xuân Sinh,9.834,0.36599999999999966
+2026-2027_HK1_010151101405,Lê Mạnh Hùng,5,Tối,G609,True,False,False,Bùi Thị Lan Anh,10.538,Huỳnh Hữu Nhân,10.22,Chưa Phân Công,10.124,0.3179999999999996
+2026-2027_HK1_010151101406,Lê Mạnh Hùng,5,Chiều,G301,True,True,True,Lê Mạnh Hùng,10.952,Ngô Minh Nhựt,10.952,Nguyễn Lương Anh Tuấn,10.904,0.0
+2026-2027_HK1_010151101407,Huỳnh Thanh Sơn,4,Sáng,G301,True,False,False,Nguyễn Thị Ngọc Ẩn,10.952,Đặng Thục Hiền,10.634,Bùi Thị Lan Anh,10.22,0.3179999999999996
+2026-2027_HK1_010151101408,Huỳnh Thanh Sơn,3,Sáng,G201,True,False,False,Ngô Minh Nhựt,11.0,Nguyễn Thị Ngọc Thanh,10.952,Lê Thanh Nguyệt,10.586,0.04800000000000004
+2026-2027_HK1_010151101408,Huỳnh Thanh Sơn,8,Sáng,G201,True,False,False,Bùi Thị Lan Anh,4.1,Hồ Huỳnh Phong,4.1,Lê Thanh Nguyệt,4.1,0.0
+2026-2027_HK1_010151101409,Nguyễn Triệu Phong,7,Sáng,G202,True,False,False,Hồ Huỳnh Phong,10.952,Huỳnh Hữu Nhân,10.802,Mạc Đức Hoàng,10.427,0.15000000000000036
+2026-2027_HK1_010151101410,Huỳnh Thanh Sơn,3,Chiều,G202,True,False,False,Nguyễn Thị Ngọc Ẩn,10.952,Trần Nguyên Bảo,10.952,Đặng Thục Hiền,10.586,0.0
+2026-2027_HK1_010151101410,Huỳnh Thanh Sơn,8,Chiều,G202,True,False,False,Nguyễn Thị Ngọc Ẩn,4.1,Trần Nguyên Bảo,4.1,Đặng Thục Hiền,4.1,0.0
+2026-2027_HK1_011100085801,Lê Minh Hưng,3,Tối,G609,True,False,False,Nguyễn Thị Ngọc Ẩn,10.2,Khương Thới Hoàn Duy,9.882,Bùi Thị Lan Anh,9.834,0.3180000000000014
+2026-2027_HK1_011100085801,Lê Minh Hưng,8,Tối,G609,True,False,False,Bùi Thị Lan Anh,4.052,Huỳnh Hữu Nhân,4.052,Khương Thới Hoàn Duy,4.052,0.0
+2026-2027_HK1_011110006801,Trần Minh Trí,3,Sáng,G304,False,False,False,Phan Chánh Minh,10.952,Võ Hoàng,10.538,Huỳnh Thanh Sơn,10.2,0.4140000000000015
+2026-2027_HK1_011110006801,Trần Minh Trí,8,Sáng,G304,False,False,False,Phan Chánh Minh,4.382,Đặng Thục Hiền,4.382,Bùi Thị Lan Anh,4.364,0.0
+2026-2027_HK1_011110006802,Trần Minh Trí,5,Chiều,K302,False,False,False,Lê Mạnh Hùng,9.7,Nguyễn Hữu Hiệp,9.7,Nguyễn Lương Anh Tuấn,9.7,0.0
+2026-2027_HK1_011110006803,Trần Minh Trí,3,Chiều,K104,False,False,False,Nguyễn Duy Hiếu,9.7,Nguyễn Lương Anh Tuấn,9.7,Nguyễn Thị Ngọc Ẩn,9.7,0.0
+2026-2027_HK1_011110006803,Trần Minh Trí,8,Chiều,K104,False,False,False,Bùi Thị Lan Anh,2.8,Chưa Phân Công,2.8,Huỳnh Hữu Nhân,2.8,0.0
+2026-2027_HK1_011110006804,Trần Minh Trí,5,Sáng,K202,False,False,False,Huỳnh Thanh Sơn,9.7,Nguyễn Duy Hiếu,9.7,Nguyễn Hữu Hiệp,9.7,0.0
+2026-2027_HK1_011110006805,Phan Hoàng Nam,7,Sáng,K306,True,False,False,Hồ Huỳnh Phong,9.7,Nguyễn Hữu Hiệp,9.7,Huỳnh Hữu Nhân,9.334,0.0
+2026-2027_HK1_011110006806,Phan Hoàng Nam,7,Chiều,K304,True,False,True,Hồ Huỳnh Phong,9.7,Phan Hoàng Nam,9.7,Nguyễn Hữu Hiệp,9.334,0.0
+2026-2027_HK1_011110006807,Trần Minh Trí,2,Sáng,K106,False,False,False,Hồ Huỳnh Phong,9.7,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,0.0
+2026-2027_HK1_011110006808,Trần Minh Trí,6,Chiều,K104,False,False,False,Huỳnh Hữu Nhân,9.7,Khương Thới Hoàn Duy,9.7,Lê Mạnh Hùng,9.7,0.0
+2026-2027_HK1_011110006809,Trần Minh Trí,6,Sáng,K402,False,False,False,Bùi Thị Lan Anh,9.7,Huỳnh Hữu Nhân,9.7,Khương Thới Hoàn Duy,9.7,0.0
+2026-2027_HK1_011110006810,Trần Minh Trí,2,Chiều,K101,False,False,False,Hồ Ngọc Thanh,9.7,Hồ Văn Quí,9.7,Lê Mạnh Hùng,9.7,0.0

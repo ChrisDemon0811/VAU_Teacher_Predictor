@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dự đoán giảng viên VAU dựa trên thói quen giảng dạy trong dữ liệu lịch sử.">
+  <title>VAU Teacher Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="VAU Teacher Predictor - về đầu trang">
+        <span class="brand-mark" aria-hidden="true">VP</span>
+        <span><strong>VAU Teacher Predictor</strong><small>Công cụ tham khảo cho sinh viên</small></span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#du-doan">Dự đoán</a>
+        <a href="#mo-hinh">Mô hình</a>
+        <a class="nav-official" href="https://pdt.vau.edu.vn/tra-cuu-thoi-khoa-bieu" target="_blank" rel="noopener noreferrer">TKB chính thức <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Historical Matching · Bước 9.1</p>
+          <h1>Dự đoán giảng viên dựa trên <em>thói quen giảng dạy</em></h1>
+          <p class="hero-lead">Nhập lịch học dự kiến để xem ba giảng viên có lịch sử giảng dạy phù hợp nhất. Kết quả hỗ trợ tham khảo, không thay thế thông báo từ Phòng Đào tạo.</p>
+          <div class="hero-points" aria-label="Điểm nổi bật">
+            <span><i aria-hidden="true">✓</i> Không dùng tên môn học</span>
+            <span><i aria-hidden="true">✓</i> Dữ liệu lịch sử thực tế</span>
+            <span><i aria-hidden="true">✓</i> Chạy hoàn toàn cục bộ</span>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Lưu ý quan trọng">
+          <div class="note-icon" aria-hidden="true">i</div>
+          <div>
+            <strong>Đây là dự đoán tham khảo</strong>
+            <p>Điểm Historical Matching là điểm xếp hạng, không phải tỷ lệ phần trăm hay xác suất được phân công.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="predict-section" id="du-doan">
+      <div class="container predictor-layout">
+        <div class="form-card">
+          <div class="section-heading">
+            <span class="step">01</span>
+            <div><p class="kicker">Lịch học dự kiến</p><h2>Nhập thông tin ca học</h2></div>
+          </div>
+
+          <form id="prediction-form" novalidate>
+            <div class="field-grid">
+              <label class="field">
+                <span>Thứ trong tuần <b>*</b></span>
+                <select id="thu" name="thu" required>
+                  <option value="">Chọn thứ</option>
+                  <option value="2">Thứ 2</option>
+                  <option value="3">Thứ 3</option>
+                  <option value="4">Thứ 4</option>
+                  <option value="5">Thứ 5</option>
+                  <option value="6">Thứ 6</option>
+                  <option value="7">Thứ 7</option>
+                  <option value="8">Chủ nhật</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Buổi học <b>*</b></span>
+                <select id="buoi" name="buoi" required>
+                  <option value="">Chọn buổi</option>
+                  <option value="Sáng">Sáng</option>
+                  <option value="Chiều">Chiều</option>
+                  <option value="Tối">Tối</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Phòng học <b>*</b></span>
+              <input id="phong" name="phong" type="text" list="room-options" placeholder="Ví dụ: G502, K502 hoặc Online18" autocomplete="off" required>
+              <datalist id="room-options"></datalist>
+              <small>Hỗ trợ phòng thuộc tòa đã biết, tòa mới và phòng Online.</small>
+            </label>
+
+            <fieldset>
+              <legend>Tiết học <span>Không bắt buộc</span></legend>
+              <p class="field-help">Nhập đủ cả hai trường để dùng mô hình nâng cao. Hệ thống không tự suy đoán tiết học.</p>
+              <div class="field-grid">
+                <label class="field">
+                  <span>Tiết bắt đầu</span>
+                  <input id="tiet-bat-dau" name="tiet_bat_dau" type="number" min="1" max="20" inputmode="numeric" placeholder="Ví dụ: 1">
+                </label>
+                <label class="field">
+                  <span>Tiết kết thúc</span>
+                  <input id="tiet-ket-thuc" name="tiet_ket_thuc" type="number" min="1" max="20" inputmode="numeric" placeholder="Ví dụ: 5">
+                </label>
+              </div>
+            </fieldset>
+
+            <div id="form-error" class="form-message error" role="alert" hidden></div>
+            <button id="submit-button" class="primary-button" type="submit">
+              <span class="button-label">Dự đoán giảng viên</span>
+              <span class="button-arrow" aria-hidden="true">→</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+
+        <aside class="guide-card">
+          <p class="kicker">Cách sử dụng</p>
+          <ol>
+            <li><span>1</span><div><strong>Chọn thời gian</strong><p>Chọn thứ và buổi dự kiến.</p></div></li>
+            <li><span>2</span><div><strong>Nhập phòng học</strong><p>Dùng đúng mã phòng, kể cả Online.</p></div></li>
+            <li><span>3</span><div><strong>Thêm tiết nếu biết</strong><p>Thông tin này kích hoạt mô hình nâng cao.</p></div></li>
+          </ol>
+          <div class="model-mode"><span id="mode-dot"></span><div><small>Chế độ hiện tại</small><strong id="mode-label">Mô hình cơ bản</strong></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="prediction-status" class="container status-area" aria-live="polite"></section>
+
+    <section id="results-section" class="results-section" hidden>
+      <div class="container">
+        <div class="results-header">
+          <div><p class="kicker">Kết quả phân tích</p><h2>Top 3 giảng viên phù hợp</h2></div>
+          <span id="result-model" class="model-tag"></span>
+        </div>
+        <div id="result-notice" class="result-notice"></div>
+        <div id="result-tie-warning" class="tie-warning" hidden></div>
+        <div id="result-cards" class="result-cards"></div>
+        <p id="result-warning" class="result-warning"></p>
+      </div>
+    </section>
+
+    <section class="model-section" id="mo-hinh">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow"><span></span> Minh bạch mô hình</p>
+          <h2>Hệ thống hoạt động như thế nào?</h2>
+          <p>Historical Matching so khớp lịch nhập với thói quen lịch sử theo thứ, buổi, tòa, tầng và phòng. Khi gặp một tòa chưa có trong Train, Bước 9.1 tự chuyển sang cold-start và bỏ toàn bộ tín hiệu tòa, tầng, phòng. Khi có đủ tiết học, mô hình nâng cao còn xét mức giao nhau của khoảng tiết. Tên và mã môn học không tham gia dự đoán.</p>
+        </div>
+        <div id="metric-cards" class="metric-cards" aria-live="polite">
+          <div class="metric-skeleton"></div><div class="metric-skeleton"></div>
+        </div>
+        <div class="evaluation-note">
+          <div aria-hidden="true">!</div>
+          <p><strong>Validation và Test có vai trò khác nhau.</strong> Validation được dùng để đánh giá cấu hình đã chọn. Test chỉ là kết quả tham khảo vì dữ liệu này đã được xem trong quá trình thử nghiệm trước đây; cần một học kỳ hoàn toàn mới để kiểm chứng cuối cùng.</p>
+        </div>
+        <div class="evaluation-note cold-start-note">
+          <div aria-hidden="true">K</div>
+          <p><strong>Tòa K là trường hợp cold-start.</strong> Tòa được đưa vào sử dụng từ HK1 năm 2026–2027 và không có ca phòng K trong Train cũ. Hệ thống không suy diễn K501 từ G501; kết quả cho phòng K chủ yếu dựa trên thứ, buổi và tiết học nếu được nhập.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>VAU Teacher Predictor</strong><p>Dự án hỗ trợ tham khảo lịch học dành cho sinh viên.</p></div>
+      <a href="https://pdt.vau.edu.vn/tra-cuu-thoi-khoa-bieu" target="_blank" rel="noopener noreferrer">Tra cứu thời khóa biểu chính thức <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>

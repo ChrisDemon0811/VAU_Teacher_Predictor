@@ -1,0 +1,88 @@
+{
+  "input_train": 403,
+  "recovered_online": 89,
+  "new_train": 492,
+  "validation": 172,
+  "test": 165,
+  "test_seen_in_original": 0.8484848484848485,
+  "test_seen_in_expanded": 0.8484848484848485,
+  "caveat": "Test đã được xem trong các bước trước: chỉ là phép kiểm tra tham khảo. Không dùng kết quả Test để chọn cấu hình. Cần học kỳ tương lai làm kiểm tra cuối.",
+  "models": {
+    "basic": {
+      "name": "History_time_strong_basic_goc",
+      "family": "History",
+      "validation": {
+        "model": "History_time_strong_basic_goc",
+        "split": "Validation",
+        "rows": 172,
+        "teacher_coverage": 0.9883720930232558,
+        "top1": 0.13953488372093023,
+        "top3": 0.38953488372093026,
+        "top3_class_weighted": 0.4136546184738956,
+        "top3_known": 0.3941176470588235,
+        "f1_macro_known": 0.1008400001176059
+      },
+      "validation_margin_threshold": null,
+      "weights": {
+        "day": 3.6,
+        "session": 2.8,
+        "joint": 3.3,
+        "building": 0.5,
+        "floor": 0.8,
+        "room": 0.3,
+        "period": 1.0,
+        "recent": 1.0
+      },
+      "train_file": "history_basic.csv",
+      "test_reference": {
+        "model": "History_time_strong_basic_goc",
+        "split": "Test_tham_khao",
+        "rows": 165,
+        "teacher_coverage": 0.8484848484848485,
+        "top1": 0.07272727272727272,
+        "top3": 0.18181818181818182,
+        "top3_class_weighted": 0.19808743169398904,
+        "top3_known": 0.21428571428571427,
+        "f1_macro_known": 0.07932992169318277
+      }
+    },
+    "advanced": {
+      "name": "History_time_strong_advanced_goc",
+      "family": "History",
+      "validation": {
+        "model": "History_time_strong_advanced_goc",
+        "split": "Validation",
+        "rows": 172,
+        "teacher_coverage": 0.9883720930232558,
+        "top1": 0.14534883720930233,
+        "top3": 0.38372093023255816,
+        "top3_class_weighted": 0.40763052208835343,
+        "top3_known": 0.38823529411764707,
+        "f1_macro_known": 0.11004314265408179
+      },
+      "validation_margin_threshold": null,
+      "weights": {
+        "day": 3.6,
+        "session": 2.8,
+        "joint": 3.3,
+        "building": 0.5,
+        "floor": 0.8,
+        "room": 0.3,
+        "period": 1.0,
+        "recent": 1.0
+      },
+      "train_file": "history_advanced.csv",
+      "test_reference": {
+        "model": "History_time_strong_advanced_goc",
+        "split": "Test_tham_khao",
+        "rows": 165,
+        "teacher_coverage": 0.8484848484848485,
+        "top1": 0.07878787878787878,
+        "top3": 0.17575757575757575,
+        "top3_class_weighted": 0.19945355191256833,
+        "top3_known": 0.20714285714285716,
+        "f1_macro_known": 0.08334983825179902
+      }
+    }
+  }
+}

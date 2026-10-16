@@ -1,0 +1,23 @@
+{
+  "ket_qua": [
+    {
+      "giang_vien": "Nguyễn Thị Ngọc Thanh",
+      "diem_xep_hang": 11.282,
+      "so_ca_lich_su_trung_thu_buoi": 5
+    },
+    {
+      "giang_vien": "Nguyễn Duy Hiếu",
+      "diem_xep_hang": 11.234,
+      "so_ca_lich_su_trung_thu_buoi": 4
+    },
+    {
+      "giang_vien": "Nguyễn Thái Sơn",
+      "diem_xep_hang": 11.0,
+      "so_ca_lich_su_trung_thu_buoi": 4
+    }
+  ],
+  "du_doan_co_co_so_kiem_dinh": false,
+  "thong_bao": "Độ tin cậy chưa được kiểm chứng đủ; chỉ tham khảo.",
+  "canh_bao": "Không phải tên giảng viên chính thức. Điểm xếp hạng không nhất thiết là xác suất.",
+  "model": "History_time_strong_basic_goc"
+}
