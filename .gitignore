@@ -10,6 +10,7 @@ htmlcov/
 # Gói nguồn Streamlit chỉ dùng để tích hợp cục bộ, không đưa lên GitHub.
 VAU_Streamlit_HK2_2026_2027_TraiMoi.zip
 VAU_Fix_K02_K04_TangTret.zip
+VAU_Buoc10_1_KTangTret_Va_Streamlit.zip
 
 # Không bao giờ commit cấu hình gcloud, dữ liệu mẫu hoặc secrets của app Streamlit.
 streamlit_hk2_2026_2027/config/

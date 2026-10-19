@@ -33,22 +33,16 @@ py -3.11 -m venv .venv
 4. Chọn Python 3.11 trong Advanced settings nếu có; Deploy.
 5. Nếu dùng folder con, cần bảo đảm package `model` và `requirements.txt` ở cùng folder với file app. Streamlit Cloud tự tìm dependency file theo folder của entrypoint nếu root không có bản ưu tiên khác. Theo hướng dẫn Streamlit Cloud, `requirements.txt` **đặt cạnh `streamlit_app.py` có ưu tiên hơn bản ở root**, vì vậy có thể giữ nguyên repository FastAPI cũ. Không cần tạo repository mới.
 
-## Tái huấn luyện từ dữ liệu đầu vào
+## Dữ liệu Bước 10.1
 
-Cần **hai ZIP nguồn đã có**: `VAU_Buoc8_MoRongVaTrainLai.zip` và `VAU_Buoc9_KetQua_MauTuDuLieuCuaBan.zip`. Bản host đã chứa kết quả của quá trình này, bạn không phải tải lại để deploy.
-
-```bash
-python retrain.py --b8 VAU_Buoc8_MoRongVaTrainLai.zip --b9 VAU_Buoc9_KetQua_MauTuDuLieuCuaBan.zip --out model
-```
-
-Sau đó app Streamlit tự nạp model/ CSV/JSON mới.
+Ứng dụng dùng trực tiếp `model/retrained_history.csv` từ gói Bước 10.1: **758 ca**, gồm 18 ca tầng trệt tòa K (K01, K02, K04, K05, K06). `model/config.json` và `model/report.json` cùng phiên bản 10.1. Không cần và không thực hiện huấn luyện lại khi chạy website. Các dữ liệu cào thô và thư mục Colab không cần đưa lên GitHub.
 
 ## Đánh giá và cảnh báo
 
-- Trọng số/mô hình được lựa chọn bằng **Validation HK3 2025–2026** (172 ca). Nhóm ca có nhãn môn học chỉ 27 ca, vì vậy lựa chọn bonus môn học dễ quá khớp; cần học kỳ tương lai làm đánh giá độc lập.
+- Trọng số/mô hình được lựa chọn bằng **Validation HK3 2025–2026** (172 ca). Top 3 **41,86% là kết quả trước Bước 10.1**, chưa phải điểm đánh giá lại trên bộ lịch sử 758 ca. Nhóm ca có nhãn môn học chỉ 27 ca, vì vậy lựa chọn bonus môn học dễ quá khớp; cần học kỳ tương lai làm đánh giá độc lập.
 - Test HK1 2026–2027 đã được kiểm tra nhiều lần trước đó, **không còn là tập Test độc lập**; bảng chẩn đoán trong `model/report.json` không đại diện HK2 2026–2027.
-- Bộ Train cuối chứa dữ liệu HK1 2026–2027, bao gồm 60 ca ở tòa K; nay K có dữ liệu lịch sử từ kỳ này, không còn hoàn toàn cold-start cho HK2 tới.
+- Bộ lịch sử cuối chứa dữ liệu HK1 2026–2027, bao gồm **78 ca ở tòa K**, trong đó 18 ca tầng trệt. Lịch sử tầng trệt còn ít nên dự đoán K01/K02/K04/K05/K06 chỉ mang tính tham khảo.
 - 89 ca Online từng bị loại được giữ thành ứng viên và thử trên Validation. Phiên bản được chọn chưa thêm chúng vào lịch sử chính vì kết quả Validation thấp hơn.
-- Xem `model/report.json` và `model/model_selection_validation.csv` để biết chính xác kết quả.
+- Xem `model/report.json` để biết số liệu và giới hạn đánh giá của phiên bản này.
 
 **Thời khóa biểu chính thức:** https://pdt.vau.edu.vn/tra-cuu-thoi-khoa-bieu

@@ -13,10 +13,15 @@ predict = PREDICTOR.predict
 parse_room = PREDICTOR.parse_room
 
 
-def test_final_training_data_has_740_rows_and_no_target_semester():
-    history, _config, report, _catalog = load_assets()
-    assert len(history) == 740
-    assert report["final_train_rows"] == 740
+def test_final_training_data_has_758_rows_and_no_target_semester():
+    history, config, report, _catalog = load_assets()
+    assert len(history) == 758
+    assert report["final_train_rows"] == 758
+    assert report["buoc10_1"]["train_sau"] == 758
+    assert config["version"] == "10.1-HK2-2026-2027"
+    ground = history[(history["toa_nha"] == "K") & (history["tang"] == 0)]
+    assert len(ground) == 18
+    assert ground["phong"].value_counts().to_dict() == report["buoc10_1"]["cac_phong_K_tret"]
     target = history[
         (history["nam_hoc"].astype(str) == "2026-2027")
         & (history["hoc_ky"].astype(str) == "2")
@@ -27,7 +32,7 @@ def test_final_training_data_has_740_rows_and_no_target_semester():
 def test_g502_without_course_keeps_history_ranking():
     result = predict(5, "Sáng", "G502")
     assert result["model"] == "HistoryHK2_2026_2027_course_optional"
-    assert result["so_ca_du_lieu_train"] == 740
+    assert result["so_ca_du_lieu_train"] == 758
     assert result["ket_qua"][0]["giang_vien"] == "Nguyễn Thị Ngọc Thanh"
     assert result["ket_qua"][0]["diem_xep_hang"] == 11.282
     assert result["co_su_dung_mon_hoc"] is False
@@ -55,28 +60,39 @@ def test_k502_uses_trained_k_history():
     assert result["ket_qua"][0]["giang_vien"] == "Nguyễn Thái Sơn"
 
 
-def test_ground_floor_k_rooms_use_building_history_without_floor_history():
+def test_ground_floor_k_rooms_use_new_floor_and_room_history():
     history, _config, _report, catalog = load_assets()
-    assert history[(history["toa_nha"] == "K") & (history["tang"] == 0)].empty
+    assert len(history[(history["toa_nha"] == "K") & (history["tang"] == 0)]) == 18
     known_subject = str(catalog.iloc[0]["ten_mon"])
-    warning = "Chưa có dữ liệu lịch sử tầng trệt tòa K; kết quả chỉ mang tính tham khảo."
+    warning = "Lịch sử tầng trệt tòa K còn ít (18 ca); kết quả chỉ mang tính tham khảo."
 
-    for room, number in (("K02", 2), ("K04", 4)):
+    for day, session, room, number, top_name in (
+        (6, "Sáng", "K02", 2, "Khương Thới Hoàn Duy"),
+        (2, "Tối", "K04", 4, "Khương Thới Hoàn Duy"),
+    ):
         assert parse_room(room) == (room, "K", 0, number)
-        result = predict(5, "Sáng", room, 1, 5, known_subject)
+        result = predict(day, session, room)
         assert len(result["ket_qua"]) == 3
-        assert result["so_ca_du_lieu_train"] == 740
+        assert result["so_ca_du_lieu_train"] == 758
         assert result["toa_nha"] == "K"
         assert result["che_do"] == "thoi_gian_va_dia_diem"
         assert result["canh_bao_tang_tret"] == warning
         assert warning in result["canh_bao"]
-        assert result["co_su_dung_mon_hoc"] is True
-        assert any(item["so_ca_trung_toa_nha"] > 0 for item in result["ket_qua"])
-        assert all(item["so_ca_trung_tang"] == 0 for item in result["ket_qua"])
-        assert all(item["so_ca_trung_phong"] == 0 for item in result["ket_qua"])
+        assert result["ket_qua"][0]["giang_vien"] == top_name
+        assert result["ket_qua"][0]["so_ca_trung_toa_nha"] > 0
+        assert result["ket_qua"][0]["so_ca_trung_tang"] > 0
+        assert result["ket_qua"][0]["so_ca_trung_phong"] > 0
+
+    with_course_and_periods = predict(6, "Sáng", "K02", 1, 5, known_subject)
+    assert with_course_and_periods["co_su_dung_mon_hoc"] is True
+    assert any(item["da_tung_day_mon"] for item in with_course_and_periods["ket_qua"])
+    assert with_course_and_periods["ket_qua"][0]["so_ca_trung_phong"] > 0
 
 
 def test_room_parser_keeps_existing_buildings_and_online():
+    for room, number in (("K01", 1), ("K02", 2), ("K04", 4), ("K05", 5), ("K06", 6)):
+        assert parse_room(room) == (room, "K", 0, number)
+    assert parse_room("K004") == ("K004", "K", 0, 4)
     assert parse_room("G502") == ("G502", "G", 5, 2)
     assert parse_room("K101") == ("K101", "K", 1, 1)
     assert parse_room("K502") == ("K502", "K", 5, 2)
@@ -88,6 +104,7 @@ def test_online18_has_no_physical_location_signal():
     result = predict(5, "Sáng", "Online18")
     assert result["che_do"] == "chi_thoi_gian_online"
     assert result["toa_nha"] == "ONLINE"
+    assert result["ket_qua"][0]["giang_vien"] == "Nguyễn Hữu Hiệp"
     assert all(item["so_ca_trung_toa_nha"] == 0 for item in result["ket_qua"])
     assert all(item["so_ca_trung_tang"] == 0 for item in result["ket_qua"])
     assert all(item["so_ca_trung_phong"] == 0 for item in result["ket_qua"])

@@ -36,8 +36,8 @@ with st.sidebar:
     st.metric('Số ca lịch sử Train cuối',f"{report['final_train_rows']:,}")
     st.metric('Số môn HK2 năm trước',f"{report['raw_hk2_subjects']}")
     val=report['validation']
-    st.metric('Top 3 trên Validation HK3 2025–2026',f"{val['top3']*100:.2f}%")
-    st.warning('Đánh giá này chỉ là backtest từ dữ liệu cũ; chưa xác nhận độ chính xác trong HK2 2026–2027. Tập Test trước đã được tham khảo nhiều lần.')
+    st.metric('Top 3 Validation trước Bước 10.1',f"{val['top3']*100:.2f}%".replace('.', ','))
+    st.warning('41,86% là kết quả Validation trước khi bổ sung Bước 10.1, chưa phải điểm đánh giá mô hình mới. Chưa xác nhận độ chính xác trong HK2 2026–2027; tập Test trước đã được tham khảo nhiều lần.')
     st.markdown('[Thời khóa biểu chính thức của VAU](https://pdt.vau.edu.vn/tra-cuu-thoi-khoa-bieu)')
 
 subjects=sorted(catalog['ten_mon'].dropna().astype(str).unique().tolist(),key=str.casefold)
@@ -66,7 +66,7 @@ with right:
         st.write(f"- {key.replace('_HK',' · HK')}: **{number} ca**")
     st.caption('HK2 2025–2026 đã có 195 ca trực tiếp trong Train cũ. Có thêm 89 ca Online được kiểm tra, nhưng cách đưa chúng vào Train được chọn theo kết quả Validation.')
     st.markdown('**Về tòa K**')
-    st.caption('Tòa K bắt đầu sử dụng từ HK1 năm 2026–2027. Mô hình mới có lịch sử tòa K của HK1 năm 2026–2027, nhưng chưa được kiểm chứng riêng cho HK2 mới.')
+    st.caption(f"Tòa K bắt đầu sử dụng từ HK1 năm 2026–2027. Lịch sử hiện có {report['final_train_buildings']['K']} ca tòa K, gồm {report['buoc10_1']['K_tret_sau']} ca tầng trệt; chưa được kiểm chứng riêng cho HK2 mới.")
 
 if submitted:
     st.divider()

@@ -24,7 +24,7 @@ def parse_room(room):
         return 'ONLINE', 'ONLINE', -1, -1
     m = re.fullmatch(r'([A-Z]{1,3})[.\-]?(\d{2,4})([A-Z]?)', s)
     if not m:
-        raise ValueError('Phòng không hợp lệ. Ví dụ: G502, K501, Online18')
+        raise ValueError('Phòng không hợp lệ. Ví dụ: G502, K02, K04, K501, Online18')
     building, digits, suffix = m.groups()
     floor = int(digits[:-2] or '0')
     if not 0 <= floor <= 30:
@@ -59,6 +59,10 @@ def load_assets():
     catalog = pd.read_csv(ROOT / 'catalog_hk2_2025_2026.csv', encoding='utf-8-sig', dtype={'ma_mon': str})
     if 'mon_key' not in history:
         raise RuntimeError('Thiếu cột mon_key trong model/retrained_history.csv')
+    if config.get('version') != '10.1-HK2-2026-2027':
+        raise RuntimeError('Cấu hình mô hình không phải phiên bản Bước 10.1')
+    if len(history) != report['final_train_rows'] or len(history) != report['buoc10_1']['train_sau']:
+        raise RuntimeError('Dữ liệu lịch sử và báo cáo Bước 10.1 không cùng phiên bản')
     return history, config, report, catalog
 
 
@@ -139,8 +143,12 @@ def predict(thu,buoi,phong,tiet_bat_dau=None,tiet_ket_thuc=None,ten_mon=None,top
     warnings=['Điểm xếp hạng chỉ là tín hiệu so khớp lịch sử, không phải xác suất hoặc lịch phân công chính thức.']
     if not key and label: warnings.append('Không tìm được môn này trong dữ liệu HK2 2025–2026; hệ thống chỉ dùng thứ, buổi, tiết và phòng.')
     if result.get('toa_moi_chua_co_lich_su'):warnings.append('Tòa '+building+' chưa có lịch sử trong Train; kết quả không sử dụng trọng số tòa/tầng/phòng.')
-    if building == 'K' and floor == 0 and history[(history['toa_nha'] == 'K') & (history['tang'] == 0)].empty:
-        result['canh_bao_tang_tret'] = 'Chưa có dữ liệu lịch sử tầng trệt tòa K; kết quả chỉ mang tính tham khảo.'
+    if building == 'K' and floor == 0:
+        ground_rows = int(((history['toa_nha'] == 'K') & (history['tang'] == 0)).sum())
+        result['canh_bao_tang_tret'] = (
+            f'Lịch sử tầng trệt tòa K còn ít ({ground_rows} ca); kết quả chỉ mang tính tham khảo.'
+            if ground_rows else 'Chưa có dữ liệu lịch sử tầng trệt tòa K; kết quả chỉ mang tính tham khảo.'
+        )
         warnings.append(result['canh_bao_tang_tret'])
     if len(result.get('giang_vien_dong_diem_cao_nhat',[]))>3:warnings.append('Có '+str(result['so_giang_vien_dong_diem_cao_nhat'])+' giảng viên đồng điểm cao nhất.')
     result['canh_bao']=' '.join(warnings)

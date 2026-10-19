@@ -45,16 +45,16 @@
   "course_mapping_rule": "10-digit prefix of 12-digit ma_lhp, validated one-to-one in raw HK1/HK2; unknown remains blank",
   "val_subject_coverage": 27,
   "test_subject_coverage": 117,
-  "final_train_rows": 740,
+  "final_train_rows": 758,
   "final_train_by_term": {
     "2025-2026_HK1": 208,
     "2025-2026_HK2": 195,
     "2025-2026_HK3": 172,
-    "2026-2027_HK1": 165
+    "2026-2027_HK1": 183
   },
   "final_train_buildings": {
     "G": 671,
-    "K": 60,
+    "K": 78,
     "B": 4,
     "H": 3,
     "A": 2
@@ -64,6 +64,28 @@
     "HK1 2026-27 already used as Test previously: reused only as historical observations for future HK2, no independent accuracy claimed.",
     "Subject bonus from previous year when subject is known; title mapping incomplete for HK3 2025-26 and HK1 2026-27.",
     "Accuracy for future HK2 2026-27 cannot be measured until actual lecturer assignments are published.",
-    "The course itself can change assigned lecturer in the new year."
-  ]
+    "The course itself can change assigned lecturer in the new year.",
+    "Bước 10.1 chỉ bổ sung các ca K tầng trệt HK1 2026-2027 xác minh từ website công khai.",
+    "Các tuần website lỗi, fallback hoặc bảng đếm sai bị loại hoàn toàn khỏi tự động ghép.",
+    "Cùng một lớp đổi phòng giữa các tuần có thể tạo bản ghi thời gian+phòng khác; kiểm tra bảng doi_phong_can_kiem_tra.csv.",
+    "Top3 Validation cũ không đo lại sau cập nhật; không được dùng số đó để quảng bá chất lượng của mô hình mới."
+  ],
+  "buoc10_1": {
+    "train_truoc": 740,
+    "train_sau": 758,
+    "K_tret_truoc": 0,
+    "K_tret_sau": 18,
+    "cac_phong_K_tret": {
+      "K01": 7,
+      "K06": 4,
+      "K02": 4,
+      "K05": 2,
+      "K04": 1
+    },
+    "so_tuan_OK": 30,
+    "so_tuan_LOI": 0,
+    "so_ca_moi": 18,
+    "so_ung_vien_ngoai_scope": 792,
+    "ghi_chu": "Chưa có accuracy độc lập cho HK2 2026-2027; không chỉnh trọng số."
+  }
 }
