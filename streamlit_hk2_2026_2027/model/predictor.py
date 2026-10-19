@@ -22,11 +22,11 @@ def parse_room(room):
     s = re.sub(r'\s+', '', str(room).upper().strip())
     if re.fullmatch(r'ONLINE[0-9A-Z]*', s):
         return 'ONLINE', 'ONLINE', -1, -1
-    m = re.fullmatch(r'([A-Z]{1,3})[.\-]?(\d{3,4})([A-Z]?)', s)
+    m = re.fullmatch(r'([A-Z]{1,3})[.\-]?(\d{2,4})([A-Z]?)', s)
     if not m:
         raise ValueError('Phòng không hợp lệ. Ví dụ: G502, K501, Online18')
     building, digits, suffix = m.groups()
-    floor = int(digits[:-2])
+    floor = int(digits[:-2] or '0')
     if not 0 <= floor <= 30:
         raise ValueError('Tầng phải nằm trong khoảng 0 đến 30')
     return building + digits + suffix, building, floor, int(digits[-2:])
@@ -139,6 +139,9 @@ def predict(thu,buoi,phong,tiet_bat_dau=None,tiet_ket_thuc=None,ten_mon=None,top
     warnings=['Điểm xếp hạng chỉ là tín hiệu so khớp lịch sử, không phải xác suất hoặc lịch phân công chính thức.']
     if not key and label: warnings.append('Không tìm được môn này trong dữ liệu HK2 2025–2026; hệ thống chỉ dùng thứ, buổi, tiết và phòng.')
     if result.get('toa_moi_chua_co_lich_su'):warnings.append('Tòa '+building+' chưa có lịch sử trong Train; kết quả không sử dụng trọng số tòa/tầng/phòng.')
+    if building == 'K' and floor == 0 and history[(history['toa_nha'] == 'K') & (history['tang'] == 0)].empty:
+        result['canh_bao_tang_tret'] = 'Chưa có dữ liệu lịch sử tầng trệt tòa K; kết quả chỉ mang tính tham khảo.'
+        warnings.append(result['canh_bao_tang_tret'])
     if len(result.get('giang_vien_dong_diem_cao_nhat',[]))>3:warnings.append('Có '+str(result['so_giang_vien_dong_diem_cao_nhat'])+' giảng viên đồng điểm cao nhất.')
     result['canh_bao']=' '.join(warnings)
     result['thong_bao']='Dự đoán cho HK2 2026–2027, chỉ tham khảo.'

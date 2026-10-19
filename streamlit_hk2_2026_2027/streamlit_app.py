@@ -51,7 +51,7 @@ with left:
         cc1,cc2=st.columns(2)
         with cc1:thu=st.selectbox('Thứ',list(range(2,9)),format_func=lambda x: 'Chủ nhật' if x==8 else f'Thứ {x}',index=3)
         with cc2:buoi=st.selectbox('Buổi học',['Sáng','Chiều','Tối'])
-        phong=st.text_input('Phòng học',value='G502',help='Ví dụ: G502, K501, Online18. Phòng có thể chưa có lịch sử trong các kỳ trước.')
+        phong=st.text_input('Phòng học',value='G502',help='Ví dụ: G502, K02, K04, K501, Online18. Phòng có thể chưa có lịch sử trong các kỳ trước.')
         include_period=st.checkbox('Tôi biết tiết bắt đầu và tiết kết thúc')
         if include_period:
             pc1,pc2=st.columns(2)
@@ -86,6 +86,8 @@ if submitted:
         st.warning('Môn vừa nhập chưa có lịch sử phù hợp; kết quả chỉ dựa vào thời gian và địa điểm.')
     if result.get('toa_moi_chua_co_lich_su'):
         st.warning('Địa điểm mới, chưa có dữ liệu phòng/tầng: dự đoán theo thời gian và môn học nếu có.')
+    if result.get('canh_bao_tang_tret'):
+        st.warning(result['canh_bao_tang_tret'])
     for idx, item in enumerate(result.get('ket_qua',[]),1):
         with st.container(border=True):
             a,b=st.columns([4,1])

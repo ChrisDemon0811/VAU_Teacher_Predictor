@@ -10,6 +10,7 @@ PREDICTOR = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(PREDICTOR)
 load_assets = PREDICTOR.load_assets
 predict = PREDICTOR.predict
+parse_room = PREDICTOR.parse_room
 
 
 def test_final_training_data_has_740_rows_and_no_target_semester():
@@ -50,7 +51,37 @@ def test_k502_uses_trained_k_history():
     assert result["toa_moi_chua_co_lich_su"] is False
     assert result["che_do"] == "thoi_gian_va_dia_diem"
     assert result["toa_nha"] == "K"
+    assert "canh_bao_tang_tret" not in result
     assert result["ket_qua"][0]["giang_vien"] == "Nguyễn Thái Sơn"
+
+
+def test_ground_floor_k_rooms_use_building_history_without_floor_history():
+    history, _config, _report, catalog = load_assets()
+    assert history[(history["toa_nha"] == "K") & (history["tang"] == 0)].empty
+    known_subject = str(catalog.iloc[0]["ten_mon"])
+    warning = "Chưa có dữ liệu lịch sử tầng trệt tòa K; kết quả chỉ mang tính tham khảo."
+
+    for room, number in (("K02", 2), ("K04", 4)):
+        assert parse_room(room) == (room, "K", 0, number)
+        result = predict(5, "Sáng", room, 1, 5, known_subject)
+        assert len(result["ket_qua"]) == 3
+        assert result["so_ca_du_lieu_train"] == 740
+        assert result["toa_nha"] == "K"
+        assert result["che_do"] == "thoi_gian_va_dia_diem"
+        assert result["canh_bao_tang_tret"] == warning
+        assert warning in result["canh_bao"]
+        assert result["co_su_dung_mon_hoc"] is True
+        assert any(item["so_ca_trung_toa_nha"] > 0 for item in result["ket_qua"])
+        assert all(item["so_ca_trung_tang"] == 0 for item in result["ket_qua"])
+        assert all(item["so_ca_trung_phong"] == 0 for item in result["ket_qua"])
+
+
+def test_room_parser_keeps_existing_buildings_and_online():
+    assert parse_room("G502") == ("G502", "G", 5, 2)
+    assert parse_room("K101") == ("K101", "K", 1, 1)
+    assert parse_room("K502") == ("K502", "K", 5, 2)
+    assert parse_room("K1002") == ("K1002", "K", 10, 2)
+    assert parse_room("Online18") == ("ONLINE", "ONLINE", -1, -1)
 
 
 def test_online18_has_no_physical_location_signal():

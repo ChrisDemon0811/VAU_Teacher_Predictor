@@ -2,6 +2,7 @@ from fastapi.testclient import TestClient
 
 from app.main import app
 from model.predict_9_1 import predict
+from model.prediction_engine import parse_room
 
 
 client = TestClient(app)
@@ -95,6 +96,22 @@ def test_k501_with_periods_uses_advanced_cold_start():
     assert data["ket_qua"][0]["giai_thich"][
         "co_su_dung_tiet_de_xep_hang"
     ] is True
+
+
+def test_ground_floor_k_rooms_are_accepted_by_fastapi_parser():
+    for room, number in (("K02", 2), ("K04", 4)):
+        assert parse_room(room) == (room, "K", 0, number)
+        response = post_predict(phong=room)
+        assert response.status_code == 200
+        assert len(response.json()["ket_qua"]) == 3
+
+
+def test_fastapi_room_parser_keeps_existing_formats():
+    assert parse_room("G502") == ("G502", "G", 5, 2)
+    assert parse_room("K101") == ("K101", "K", 1, 1)
+    assert parse_room("K502") == ("K502", "K", 5, 2)
+    assert parse_room("K1002") == ("K1002", "K", 10, 2)
+    assert parse_room("Online18") == ("ONLINE", "ONLINE", -1, -1)
 
 
 def test_other_unknown_building_is_named_in_warning():

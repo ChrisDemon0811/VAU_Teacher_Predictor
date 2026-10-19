@@ -73,10 +73,10 @@ def parse_room(room):
     x = re.sub(r'\s+','',str(room).upper().strip())
     if re.fullmatch(r'ONLINE[\dA-Z]*',x):
         return ('ONLINE','ONLINE',-1,-1)
-    m = re.fullmatch(r'([A-Z]{1,3})[.-]?(\d{3,4})([A-Z]?)',x)
+    m = re.fullmatch(r'([A-Z]{1,3})[.-]?(\d{2,4})([A-Z]?)',x)
     if not m: raise ValueError('Phòng không hợp lệ, VD: G501 hoặc Online18')
     b, digits, suffix = m.groups()
-    floor = int(digits[:-2])
+    floor = int(digits[:-2] or '0')
     if not 0 <= floor <= 30: raise ValueError('Tầng không hợp lệ')
     return (b+digits+suffix,b,floor,int(digits[-2:]))
 
